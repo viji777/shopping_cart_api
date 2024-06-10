@@ -13,7 +13,10 @@ mongoose.connect("mongodb+srv://viji:1212@cluster0.zavcg7u.mongodb.net/cart?retr
     console.log("Failed to connect DB", err);
   });
 
-app.use(cors());
+app.use(cors({
+  origin: ["https://shopping-cart-client-mu.vercel.app/"],
+  methods:["GET","POST"],
+  }));
 app.use(express.json()); // Middleware to parse JSON request bodies
 
 const productSchema = new mongoose.Schema({
