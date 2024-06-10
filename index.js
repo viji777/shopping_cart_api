@@ -15,7 +15,8 @@ mongoose.connect("mongodb+srv://viji:1212@cluster0.zavcg7u.mongodb.net/cart?retr
 
 app.use(cors({
   origin: ["https://shopping-cart-client-mu.vercel.app/"],
-  methods:["GET","POST"],
+  methods:["get","put"],
+  credentials:true
   }));
 app.use(express.json()); // Middleware to parse JSON request bodies
 
