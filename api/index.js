@@ -18,7 +18,7 @@ app.use(cors({
   methods:["get","put"],
   credentials:true
   }));
-app.use(express.json()); // Middleware to parse JSON request bodies
+app.use(express.json()); 
 
 const productSchema = new mongoose.Schema({
   id: Number,
