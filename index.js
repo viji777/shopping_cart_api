@@ -14,7 +14,7 @@ mongoose.connect("mongodb+srv://viji:1212@cluster0.zavcg7u.mongodb.net/cart?retr
   });
 
 app.use(cors({
-  origin: [""],
+  origin: ["https://shopping-cart-client-cyan.vercel.app/"],
   methods:["get","put"],
   credentials:true
   }));
